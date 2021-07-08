@@ -53,18 +53,24 @@ function createTodo(input){
         btnX.setAttribute("class", "btn")
         btnX.innerHTML = "x"
         btnDiv.appendChild(btnX)
-        btnDiv.appendChild(btnConfirm)      
+
+
+        
+
+
 
         todoP.appendChild(btnDiv)
         todoDiv.appendChild(todoinput)
-        todoDiv.appendChild(todoP)          
+        todoDiv.appendChild(todoP)  
+        
         
         btnX.addEventListener('click', () => {
             let inputEdit = document.querySelector('.input-edit')
             
             if(isEditable && !inputEdit.value){
                 
-                alert("digite um novo texto!")                
+                alert("digite um novo texto!")
+                
                 
             }else if(isEditable &&  inputEdit.value ){
                 
