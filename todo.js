@@ -5,9 +5,13 @@ let btn = document.querySelector('.btn')
 let isEditable = false
 
 btn.addEventListener('click', () => {
+   if(!isEditable){
+
+       render(inputTodo)
+   }else{
+       alert("é preciso terminar a edição do To Do!")
+   }
    
-    render(inputTodo)
-    //createTodo(inputTodo.value)   
 })
 
 function render(input) {
@@ -93,9 +97,13 @@ function createTodo(input){
         })
 
         btnEdit.addEventListener('click', () => {
-            todoP.appendChild(editTodo())
-            btnEdit.setAttribute("class", "btn btn-edit hide")
-            btnX.innerHTML = "ok"
+            if(!isEditable){
+                todoP.appendChild(editTodo())
+                btnEdit.setAttribute("class", "btn btn-edit hide")
+                btnX.innerHTML = "ok"
+            }else {
+                alert("é preciso terminar a edição do To Do!")
+            }
 
 
             

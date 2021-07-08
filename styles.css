@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    color: #000;
 
 }
 
@@ -51,12 +52,12 @@ section {
     cursor: pointer;
     transition: .2s;
     font-weight: 700;
-    background-color: #efefef;
+    background: #efefef;
     
 }
 
 .btn:hover {
-    color: #fff;
+    
     background: rgb(207, 107, 6);
 }
 
