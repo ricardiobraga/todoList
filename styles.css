@@ -51,6 +51,7 @@ section {
     cursor: pointer;
     transition: .2s;
     font-weight: 700;
+    background-color: #efefef;
     
 }
 
@@ -96,10 +97,7 @@ p {
     
 }
 
-p:hover {
-    color: #fff;
-    background: rgb(110, 70, 31) ;
-}
+
 
 .check-todo{
     margin-right: 5px;
@@ -115,5 +113,44 @@ p .selecionado{
 .input-edit {
     width: 35vw;
     text-overflow: clip;
+    
+}
+
+@media (max-width: 700px) {
+
+    .btn {
+        border: 0px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .2s;
+        font-weight: 700;
+        background: #efefef;
+        
+    }
+
+    .btn:hover {
+        
+        background: #efefef;
+    }
+
+    p {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        width: 50vw;
+        
+        border-radius: 5px;
+        background-color: #999;
+        font-weight: 500; 
+        transition: .5s; 
+    
+        text-overflow: clip;
+        
+    }
+
+    p:hover {
+        
+        background: #999;
+    }
     
 }
